@@ -1,0 +1,45 @@
+{
+  "name": "ampli-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ampli for desktop: music, audiobooks, ebooks and radio from your own server",
+  "license": "MIT",
+  "author": "Elias Frehner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliasthecactus/ampli-desktop"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "tauri": "tauri",
+    "app:dev": "tauri dev",
+    "app:build": "tauri build"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@tauri-apps/api": "^2.12.4",
+    "@tauri-apps/plugin-opener": "^2.7.2",
+    "dexie": "^4.4.7",
+    "epubjs": "^0.3.93",
+    "fflate": "^0.8.3",
+    "hls.js": "^1.7.4",
+    "lucide-react": "^1.70.0",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}
